@@ -1,0 +1,126 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url("/img/header.jpg");
+    background-size: cover;
+    background-color: dimgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.7rem;
+}
+
+/* song title */
+header h1 {
+    font-size: 2rem;
+    font-family: "Rock Salt", cursive;
+    margin: 0;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* sub-title */
+header h3 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 1.5rem;
+    text-align: right;
+    margin: 0;
+    width: 65%;
+}
+
+main {
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* lyrics */
+main>section {
+    background-color: #E5E1DA;
+    color: black;
+    flex-basis: 70%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+main>section p {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+/* artist */
+main>aside {
+    background-image: url("/img/singer.jpeg");
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+}
+
+/* artist title */
+main>aside h4 {
+    font-size: 1.25rem;
+    font-family: "Rock Salt", cursive;
+    margin: 1rem auto;
+}
+
+/* artist paragraph */
+main>aside p {
+    width: 85%;
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* artist image */
+main>aside img {
+    width: 85%;
+    margin-top: 1rem;
+}
+
+/* footer */
+footer {
+    background-color: darkgray;
+    color: #fff
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: "Architects Daughter", cursive;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+}
